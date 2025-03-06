@@ -3,92 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media Layout</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Social Media Template</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <h1>P E Y S B U K</h1>
-    </header>
-    <div class="container">
-        <aside class="sidebar">
-            <section class="box profile-section">
-                <div class="profile">
-                    <img src="images/profile-pic.jpg" alt="Profile Picture">
-                    <h2>My Profile</h2>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-left">
+                <span class="home-icon">🏠</span>
+                <span>P E Y S B U K</span>
+            </div>
+            <div class="nav-right">
+                <span>🌐</span>
+                <span>👤</span>
+                <span>✉️</span>
+                <div class="notification">
+                    <span>🔔</span>
+                    <span class="badge">3</span>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">My Groups</a></li>
-                        <li><a href="#">My Events</a></li>
-                        <li><a href="#">My Photos</a></li>
-                    </ul>
-                </nav>
-            </section>
+            </div>
+        </div>
+    </nav>
 
-            <section class="box people-you-may-know">
-                <h3>People You May Know</h3>
-                <div class="person">
-                    <img src="images/PITON.jpg" alt="Person 1">
-                    <p>Malupiton</p>
-                    <button>Add Friend</button>
+    <div class="container main-content">
+        <div class="sidebar">
+            <div class="profile-card">
+                <h2>Ezra Jay S. Palarca</h2>
+                <div class="profile-info">
+                    <div class="avatar">
+                        <img src="images/profile-pic.jpg" alt="Profile Picture">
+                    </div>
+                    <div class="details">
+                        <p class="title">Student</p>
+                        <p>Tokyo, Japan</p>
+                        <p>April 1, 1988</p>
+                    </div>
                 </div>
-                <div class="person">
-                    <img src="images/happy friend.jpg" alt="Person 2">
-                    <p>Happy Friends</p>
-                    <button>Add Friend</button>
-                </div>
-                <div class="person">
-                    <img src="images/awut.jpg" alt="Person 3">
-                    <p>AWUT</p>
-                    <button>Add Friend</button>
-                </div>
-            </section>
-        </aside>
 
-        <main class="content">
-            <section class="box new-post">
-                <input type="text" placeholder="Share something...">
-                <button>Post</button>
-            </section>
-            
-            <section class="box post">
-                <h3>Benzoy Ramayla</h3>
-                <p>Hurot ang punuan sa saging</p>
+                <div class="profile-nav">
+                    <button>My Groups</button>
+                    <button>My Events</button>
+                    <button>My Photos</button>
+                </div>
+
+                <div class="interests">
+                    <h3>Interests</h3>
+                    <div class="tags">
+                        <span>News</span>
+                        <span>W3Schools</span>
+                        <span>Anime</span>
+                        <span>Games</span>
+                        <span>Friends</span>
+                        <span>Food</span>
+                        <span>Design</span>
+                        <span>Art</span>
+                        <span>Photos</span>
+                    </div>
+                </div>
+
+                <div class="alert">
+                    <button class="close">×</button>
+                    <p>Hey!</p>
+                    <p>People are looking at your profile. Find out who.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="post-card">
+                <h2>Social Media template by w3.css</h2>
+                <textarea placeholder="Status: Feeling Blue"></textarea>
+                <button class="post-btn">Post</button>
+            </div>
+
+            <div class="post-card">
+                <div class="post-header">
+                    <div class="avatar small">
+                        <img src="images/mark.jpg" alt="Mark Olaco">
+                    </div>
+                    <div>
+                        <h3>Mark Olaco</h3>
+                        <p class="time">1 min</p>
+                    </div>
+                </div>
+                <p class="post-content">
+                    kapila namig sig ing-ani sa jolibee wa jud siguro nila na appreciate, mag map nami sa sunod (#)
+                </p>
                 <div class="post-images">
-                    <img src="images/saging.jpg" alt="">
+                    <img src="images/jbi.jpg" alt="jbi">
+                    <img src="images/hehe.jpg" alt="hehe">
                 </div>
-                <button>Like</button>
-                <button>Comment</button>
-            </section>
-            
-            <section class="box post">
-                <h3>Mark Olaco</h3>
-                <p>kapila namig sig ing-ani sa jolibee wa jud siguro nila na appreciate, mag map nami sa sunod (#)</p>
+                <div class="post-actions">
+                    <button>Like</button>
+                    <button>Comment</button>
+                </div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-header">
+                    <div class="avatar small">
+                        <img src="images/dals.jpg" alt="John Dalisay">
+                    </div>
+                    <div>
+                        <h3>John Dalisay</h3>
+                        <p class="time">16 min</p>
+                    </div>
+                </div>
+                <p class="post-content">
+                    ❤️❤️❤️
+                </p>
                 <div class="post-images">
-                    <img src="images/jbi.jpg" alt="Main Image">
+                    <img src="images/yehey.jpg" alt="yehey">
+                    <img src="images/eyhhh.jpg" alt="eyhhh">
                 </div>
-                <button>Like</button>
-                <button>Comment</button>
-            </section>
-        </main>
-
-        <aside class="sidebar-right">
-            <section class="box updates">
-                <h3>Upcoming Events</h3>
-                <img src="event.jpg" alt="Event Image">
-                <p>Friday Hike</p>
-            </section>
-
-            <section class="box friend-suggestions">
-                <h3>Contacts</h3>
-                <div class="friend">
-                    <img src="friend.jpg" alt="Friend Image">
-                    <p>Jane Doe</p>
-                    <button>Add</button>
+                <div class="post-actions">
+                    <button>Like</button>
+                    <button>Comment</button>
                 </div>
-            </section>
-        </aside>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="event-card">
+                <h2>Upcoming Events:</h2>
+                <img src="images/kof.jpg" alt="kof">
+                <h3>SATURDAY</h3>
+                <p>Friday 16:00</p>
+                <button class="info-btn">Info</button>
+            </div>
+
+            <div class="friend-request">
+                <h2>Friend Request</h2>
+                <div class="request-user">
+                    <div class="avatar small">
+                        <img src="images/PITON.jpg" alt="PITON">
+                    </div>
+                    <span>Malupiton</span>
+                </div>
+                <div class="request-actions">
+                    <button class="accept">✓</button>
+                    <button class="reject">✕</button>
+                </div>
+            </div>
+
+            <div class="ads">
+                <h2>ADS</h2>
+                <div class="ads-content">
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113" alt="Advertisement" class="ads-image">
+                    <p class="ads-text"></p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h5>Footer</h5>
+        </div>
+        <div class="footer-bottom">
+            <p>Powered by <a href="#" class="w3-link">w3.css</a></p>
+        </div>
+    </footer>
 </body>
 </html>
